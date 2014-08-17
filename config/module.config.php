@@ -1,8 +1,10 @@
 <?php
 
 return [
+    'ht_oauth_client' => [],
     'service_manager' => [
         'factories' => [
+            'HtOauthClientModule\Options\ModuleOptions' => 'HtOauthClientModule\Factory\ModuleOptionsFactory',
             'Hrevert\OauthClient\Manager\UserProviderManager' => 'HtOauthClientModule\Factory\UserProviderManagerFactory',
             'Hrevert\OauthClient\Manager\ProviderManager' => 'HtOauthClientModule\Factory\ProviderManagerFactory',
         ],
