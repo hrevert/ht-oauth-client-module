@@ -1,6 +1,8 @@
 {
     "name": "hrevert/ht-oauth-client-module",
+    "description": "This module integrates Zend Framework 2 with ht-oauth-client library.",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Hrevert Technologies",
