@@ -13,7 +13,7 @@ abstract class AbstractManagerFactory implements FactoryInterface
         if ($options->isORM()) {
             return $serviceLocator->get('ht_oauth_client_doctrine_em');
         } else {
-            return $serviceLocator->get('ht_oauth_client_doctrine_em');
+            return $serviceLocator->get('ht_oauth_client_doctrine_dm');
         }
     }
 }
