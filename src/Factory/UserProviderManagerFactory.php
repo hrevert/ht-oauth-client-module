@@ -13,6 +13,6 @@ class UserProviderManagerFactory extends AbstractManagerFactory
 
         $objectManager = $this->getObjectManager($serviceLocator);
 
-        return new UserProviderManager($objectManager, $options->getProviderClass());
+        return new UserProviderManager($objectManager, $options->getUserProviderClass());
     }
 }
