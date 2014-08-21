@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "hrevert/ht-oauth-client": "dev-master"
+        "hrevert/ht-oauth-client": "0.0.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
