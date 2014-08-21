@@ -12,7 +12,7 @@ class ProviderManagerFactory extends AbstractManagerFactory
         $options = $serviceLocator->get('HtOauthClientModule\Options\ModuleOptions');
 
         $objectManager = $this->getObjectManager($serviceLocator);
-        $objectRepository = $objectManager->get($options->getProviderClass());
+        $objectRepository = $objectManager->getRepository($options->getProviderClass());
 
         return new ProviderManager($objectRepository);
     }
