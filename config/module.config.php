@@ -20,11 +20,11 @@ return [
         'driver' => [
             'ht_oauth_client_models' => [
                 'class' => 'Doctrine\ORM\Mapping\Driver\XmlDriver',
-                'paths' => __DIR__ . '/../../ht-oauth-client/config/doctrine/models',
+                'paths' => __DIR__ . '/../../ht-oauth-client/config/doctrine/orm/models',
             ],
             'ht_oauth_client_entities' => [
                 'class' => 'Doctrine\ORM\Mapping\Driver\XmlDriver',
-                'paths' => __DIR__ . '/../../ht-oauth-client/config/doctrine/entities',
+                'paths' => __DIR__ . '/../../ht-oauth-client/config/doctrine/orm/entities',
             ],
             'orm_default' => [
                 'drivers' => [
