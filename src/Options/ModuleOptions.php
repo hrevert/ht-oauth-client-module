@@ -14,7 +14,7 @@ class ModuleOptions extends AbstractOptions
      /**
      * @var array
      */   
-    protected static $allowedDrivers = ['orm', 'mongodb'];
+    protected static $allowedDrivers = ['orm', 'mongodb', 'zend-db'];
 
     /**
      * @var string
@@ -67,7 +67,7 @@ class ModuleOptions extends AbstractOptions
      */
     public function isORM()
     {
-        return $this->driver == 'orm';
+        return $this->driver === 'orm';
     }
 
     /**
@@ -77,7 +77,17 @@ class ModuleOptions extends AbstractOptions
      */
     public function isMongoDb()
     {
-        return $this->driver == 'mongodb';
+        return $this->driver === 'mongodb';
+    }
+
+    /**
+     * Checks if driver is zend-db
+     *
+     * @return bool
+     */
+    public function isZendDb()
+    {
+        return $this->driver === 'zend-db';
     }
 
     /**

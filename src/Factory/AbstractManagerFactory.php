@@ -6,6 +6,10 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 
 abstract class AbstractManagerFactory implements FactoryInterface
 {
+    /**
+     * @param ServiceLocatorInterface $serviceLocator
+     * @return \Doctrine\Common\Persistence\ObjectManager
+     */
     protected function getObjectManager(ServiceLocatorInterface $serviceLocator)
     {
         $options = $serviceLocator->get('HtOauthClientModule\Options\ModuleOptions');

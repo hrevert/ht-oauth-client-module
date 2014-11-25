@@ -14,6 +14,9 @@ return [
 
             // Doctrine Mongodb
             'ht_oauth_client_doctrine_dm' => 'doctrine.documentmanager.odm_default',
+
+            // Zend\Db
+            'ht_oauth_client_zend_db_adapter' => 'Zend\Db\Adapter\Adapter',
         ],
     ],
     'doctrine' => [
